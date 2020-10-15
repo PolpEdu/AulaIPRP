@@ -34,7 +34,8 @@ for x in range(vezes):
     Bcor = random.uniform(0.01, 1)
 
     DirouEsq = random.randint(0, 1)
-    distancia = random.randint(0, 100) #100 porque se nao sai do ecrã muito facilmente
+    distancia = random.randint(50, 200) #200 so for maior... porque se nao sai do ecrã muito facilmente
+                                        #distancia minima de 50 para evitar anda 1 coordenada só
 
     pencolor(round(Rcor,2), round(Gcor,2), round(Bcor, 2))
 
