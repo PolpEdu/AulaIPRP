@@ -3,7 +3,7 @@ from turtle import *
 
 screen = Screen()
 screen.setup(900, 850)
-pensize(1)
+pensize(2)
 color("black", "yellow")
 speed(5)
 penup()
@@ -24,23 +24,32 @@ def desenhar(raio):
     #circulos
     rcirculo= (-raio * 0.75)
     color("black", "black")
+    goto(0, 0)
     for x in range(3):
         penup()
-        goto(0,0)
         pendown()
         begin_fill()
         if x ==0:
             forward(rcirculo)
+            left(90)
+            circle(rcirculo, 45)
+            left(90)
+            forward(rcirculo)
+            end_fill()
         elif x ==1:
-            forward(-rcirculo)
-        elif x ==2:
             left(45)
             forward(rcirculo)
-        left(90)
-        circle(rcirculo,45)
-        left(90)
-        forward(rcirculo)
-        end_fill()
+            right(90)
+            circle(-rcirculo, 45)
+            right(90)
+            forward(rcirculo)
+        elif x ==2:
+            left(90)
+            forward(rcirculo)
+            left(90)
+            circle(rcirculo, 45)
+            left(90)
+            forward(rcirculo)
 
     #circulo centro
     color("yellow", "black")
