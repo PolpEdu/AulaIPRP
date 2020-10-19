@@ -8,53 +8,60 @@ color("black", "yellow")
 speed(5)
 penup()
 
-#INACABADO
+
+# INACABADO
 
 def desenhar(raio):
-    #main quadrado
+    # main quadrado
     goto(-raio, -raio)
     pendown()
     begin_fill()
     for x in range(4):
-        forward(raio*2)
+        forward(raio * 2)
         left(90)
     end_fill()
     penup()
 
-    #circulos
-    rcirculo= (-raio * 0.75)
+    # circulos
+    rcirculo = (-raio * 0.75)
     color("black", "black")
     goto(0, 0)
     for x in range(3):
-        penup()
         pendown()
         begin_fill()
-        if x ==0:
+        if x == 0:
             forward(rcirculo)
             left(90)
             circle(rcirculo, 45)
             left(90)
             forward(rcirculo)
-            end_fill()
-        elif x ==1:
+
+        elif x == 1:
             left(45)
             forward(rcirculo)
             right(90)
             circle(-rcirculo, 45)
             right(90)
             forward(rcirculo)
-        elif x ==2:
-            left(90)
+
+        elif x == 2:
+            left(65)
             forward(rcirculo)
             left(90)
             circle(rcirculo, 45)
             left(90)
-            forward(rcirculo)
 
-    #circulo centro
+        end_fill()
+        penup()
+
+    # circulo centro
     color("yellow", "black")
-    goto(0,-raio*0.25)
-    circle(raio*0.25)
+    goto(0, -raio * 0.25)
+    begin_fill()
+    pendown()
+    circle(-raio * 0.25)
+    end_fill()
+    penup()
 
 desenhar(150)
 hideturtle()
