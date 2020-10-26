@@ -1,2 +1,0 @@
-#Eduardo Nunes
-import math
