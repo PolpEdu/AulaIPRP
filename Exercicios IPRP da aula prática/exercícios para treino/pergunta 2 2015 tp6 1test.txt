@@ -1,0 +1,10 @@
+import math
+
+def maiores_90_circulo(n1,n2):
+    pi = math.pi
+    areapoligono = n * math.cos(pi/n) * math.sin(pi/n)
+
+
+    print(
+
+maiores_90_circulo(3,10

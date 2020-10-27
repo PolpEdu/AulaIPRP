@@ -1,0 +1,12 @@
+import random
+
+nr = 0
+soma = 0
+input = int(input("Quantos dados deseja jogar? "))
+for x in range(input):
+	jogada = random.randint(1,6)
+	if jogada == 6:
+		nr+=1
+	soma += jogada
+
+print("A soma foi de " + soma + "\nE o numero seis saiu " + nr + " vezes")
