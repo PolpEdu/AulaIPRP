@@ -1,0 +1,5 @@
+Na opção um era suposto esperar:
+46.8 (visto que soma o numero duas vezes)
+
+Na opção dois era suposto esperar:
+totototo (visto que adiciona as duas strings)
