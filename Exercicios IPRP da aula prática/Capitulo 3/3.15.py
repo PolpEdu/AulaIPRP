@@ -1,3 +1,4 @@
+#Eduardo Nunes
 def escrever(stringI):
     print(stringI[2:4])
     for x in range(1, len(stringI)+1):

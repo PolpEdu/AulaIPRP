@@ -1,3 +1,4 @@
+#Eduardo Nunes
 def escrever(string):
     y = len(string)
     for x in range(1, len(string) + 1):
@@ -18,5 +19,5 @@ def escrever2(string):
         # fica feio.
         print(string[x:y])
 
-
+escrever("Hello1")
 escrever2("Hello")
