@@ -1,0 +1,18 @@
+#ex1 feito em notepad
+
+O primiero erro encontra-se na linha 2, visto que a_str ainda nao esta defenida no escopo da função
+mostra. Alem disso, a_str[-1] não existe visto que uma cadeia de caracteres começa sempre no index 0
+e nao pode ser igualada a um caracter visto que as cadeias de caracteres nao se podem modificar.
+
+Pseudo código corrigido:
+
+def mostra(i):
+	print(i[0])
+
+def func():
+	a_str = 'ola'
+	mostra(a_str)
+
+func()
+dava:
+o

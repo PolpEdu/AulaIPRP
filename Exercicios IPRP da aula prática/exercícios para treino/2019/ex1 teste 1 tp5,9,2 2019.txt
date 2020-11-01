@@ -1,0 +1,5 @@
+#pergunta 1
+a = str('555')
+b = tuple(a)
+
+id(a)
