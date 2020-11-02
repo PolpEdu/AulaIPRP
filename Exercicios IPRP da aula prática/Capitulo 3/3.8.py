@@ -11,27 +11,24 @@ def zeroounao(x1):
     #para comecarem a mesma distancia
     erro = 0.1
     x2 = -x1
-    print(x2)
+    virei = 0
     while abs(f(x1)) > 10 ** -10:
         y1 = f(x1)
         y2 = f(x2)
         troca = 0
-        print(f"{x1},{x2}")
-        if y1 * y2 < 0:
-            if troca == 0:
-                print("Contido, vou agora aumentar x2")
+        #print(f"{x1},{x2}")
+        if virei == 0:
+            if y1 * y2 < 0:
                 x2 += erro
-
-            elif troca == 1:
-                print("Contido, vou diminuir x1")
-                x1-=erro
-
-        else:
-            if troca == 0:
-                troca =1
-                print("Nao contido, vou aumentar x1")
-                x2 -= erro #vou tirar para refazer a ultima conta
             else:
-                x1 +=erro
-                print(f"{x1},{x2}")
-zeroounao(10)
+                x2 -=erro
+                virei = 1
+        else:
+            if y1 * y2 < 0:
+                x1 -= erro
+            else:
+                x2 += erro
+                print(f"Zero está entre {x1},{x2}")
+                break
+
+zeroounao(40)
