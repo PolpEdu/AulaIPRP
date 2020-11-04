@@ -5,9 +5,10 @@ speed(5)
 fillcolor("black")
 shape("circle")
 
+
 def retangulo(c, l):
     up()
-    goto(-c/2, 0)
+    goto(-c / 2, 0)
     down()
 
     for x in range(2):
@@ -36,39 +37,40 @@ def retangulo(c, l):
 
 def desenhar(x1, x2, c, l):
     retangulo(c, l)
-    if not 0<= x1<7 or not 0<= x2<7 :
+    if not 0 <= x1 < 7 or not 0 <= x2 < 7:
         return print("Invalid x")
     desenharcirculos(x1, -c, l)
     desenharcirculos(x2, c, l)
 
 
-
 def desenharcirculos(x, c, l):
-    shapesize(l/120)
-    if x== 0:
+    shapesize(l / 120)
+    if x == 0:
         return
     elif x == 1:
-        drawonecenter(c,l)
+        drawonecenter(c, l)
     elif x == 2:
         drawtwo(c, l)
     elif x == 3:
-        drawtwo(c,l)
-        drawonecenter(c,l)
+        drawtwo(c, l)
+        drawonecenter(c, l)
     elif x == 4:
-        drawfour(c,l)
-    elif x ==5:
-        drawfour(c,l)
-        drawonecenter(c,l)
+        drawfour(c, l)
+    elif x == 5:
+        drawfour(c, l)
+        drawonecenter(c, l)
     elif x == 6:
-        drawsix(c,l)
+        drawsix(c, l)
 
-def drawonecenter(c,l):
+
+def drawonecenter(c, l):
     up()
     goto(c / 4, l / 2)
     down()
     stamp()
 
-def drawtwo(c,l):
+
+def drawtwo(c, l):
     up()
     goto(c / 4 + c / 6, l / 2 + l / 3)
     down()
@@ -79,7 +81,7 @@ def drawtwo(c,l):
     stamp()
 
 
-def drawfour(c,l):
+def drawfour(c, l):
     up()
     goto(c / 4 + c / 6, l / 2 + l / 3)
     down()
@@ -97,7 +99,8 @@ def drawfour(c,l):
     down()
     stamp()
 
-def drawsix(c,l):
+
+def drawsix(c, l):
     drawfour(c, l)
     up()
     goto(c / 4, l / 2 + l / 3)
@@ -107,6 +110,7 @@ def drawsix(c,l):
     goto(c / 4, l / 2 - l / 3)
     down()
     stamp()
+
 
 desenhar(6, 5, 400, 200)
 
