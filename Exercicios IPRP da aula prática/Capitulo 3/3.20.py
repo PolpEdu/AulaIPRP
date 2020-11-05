@@ -47,10 +47,7 @@ def encriptORD(string, d):
             if ord('a') <= newchar <= ord('z') or ord('A') <= newchar <= ord('Z'):
                 newstring += chr(newchar)
             else:
-                if x.isupper():
-                    newchar = newchar-26
-                else:
-                    newchar = newchar-26
+                newchar = newchar-26
                 newstring += chr(newchar)
         else:
             newstring += x

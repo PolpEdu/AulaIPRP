@@ -5,6 +5,7 @@ up()
 goto(0, 0)
 down()
 width(2)
+speed(50)
 
 def desenharGrafico(maxX, maxY, linhas, pontos):
     forward(maxX)
