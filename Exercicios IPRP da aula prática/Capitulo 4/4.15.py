@@ -10,4 +10,4 @@ def acronimo(stri):
     return newstring.upper()
 
 
-print(acronimo("Hello My Name is Eduardo"))
+print(acronimo("Hello My Name is Eduardo Nunes"))
