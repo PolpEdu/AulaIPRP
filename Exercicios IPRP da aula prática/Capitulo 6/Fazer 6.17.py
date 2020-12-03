@@ -4,6 +4,6 @@ def inverter(dicionario):
     for k, v in dicionario.items():
         D_inv[v] = D_inv.get(v, []) + [k]  # adiciona a chave k como um elemento na D_invertida,
 
-    print(D_inv)
-inverter(D)
+    return D_inv
+print(inverter(D))
 #https://codeshare.io/5g7vVR
