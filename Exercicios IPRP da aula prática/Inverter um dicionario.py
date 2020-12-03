@@ -1,4 +1,6 @@
 # Eduardo
+
+###################### PARA INTEGERS!!! #######################
 D = {"joao": 18, "pedro": 18, "tiago": 13, "luis": 18}
 D_inv = {}
 for k, v in D.items():
@@ -17,7 +19,7 @@ for k, v in D.items():
 
 print(D_inv)
 
-# para listas iteráveis
+################### PARA LISTAS ITERAVEIS ########################
 D = {'joao': ['IPRP', 'MAT', 'BIO'], 'pedro': ['IPRP', 'TI'], 'tiago': ['MAT']}
 D_inv = {}
 for k, v in D.items():

@@ -6,7 +6,7 @@ arvergeneologica = {
     'Pais-Freitas': ['TIAGO', 'CARLOTA', 'BÁRBARA', 'FRANCISCA', "CARLOTA"]
 }
 
-
+#fazer tambem com netos
 def arvore(arvoregene, nome1, nome2):
     for nome1, pais1 in arvoregene.items():
         for nome2, pais2 in arvoregene.items():
