@@ -1,4 +1,4 @@
-# Eduardo Nunes
+ # Eduardo Nunes
 #eu acho que estamos nos a referir a esta correlação
 #https://pt.wikipedia.org/wiki/Coeficiente_de_correla%C3%A7%C3%A3o_de_Pearson
 # DESVIO: https://www.todamateria.com.br/desvio-padrao/
