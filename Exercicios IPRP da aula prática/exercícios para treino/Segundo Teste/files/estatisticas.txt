@@ -1,6 +1,6 @@
-Lakers,10,20
-dsadas,30,20
+Lakers,10,25
+dsadas,30,22
 cvxvxc,20,23
 kjhklhj,10,20
-EU,200,20
-Maior diferença: EU:180
+dfsakdjsa,50,55
+Lakers, 15
