@@ -1,0 +1,10 @@
+Pedro,Carlos,Raul,Tiago,Paulo
+Paulo,Carlos,Rui,Gui,Lucas,Rabasco,Nuno
+Carlos,Alvaro,Lucas,Rabasco,Tiago,Julio
+Nuno,Tiago,Paulo
+Raul,Pedro,Lucas,Rabasco
+Julio,Joao,Pedro,Duarte
+Duarte,Rabasco,Tiago,Alvaro
+Tiago,Gui,Lucas
+Lucas,Tiago
+Alvaro,Carlos,Gui
