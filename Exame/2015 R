@@ -1,0 +1,23 @@
+1)
+x = 0
+def locais(y):
+    # print(x) x não esta defenido neste escopo
+    x = 10
+    print(x)
+    print(y)
+print(x)
+locais(30)
+#print(y) y nao esta defenido neste escopo
+
+#as variaveis globais estão defenidas integralmente no corpo do codigo e so termina quando o programa
+#termina
+#as variaveis locais são defenidas no escopo de funções e terminam quando a função termina.
+
+2)
+1-15
+2-14
+3-12
+4-9
+5-5
+
+3)
