@@ -17,7 +17,7 @@ def mist(seq):
     return lista
 
 
-#print(mist([1, 2, 3, 4, 5]))
+# print(mist([1, 2, 3, 4, 5]))
 
 from turtle import *
 import math
@@ -79,13 +79,45 @@ def comprar_vender(list):
     newlist = []
     media = 0
     for i in range(len(list)):
-        soma = sum(list[:i+1])
-        maisum = i+1
-        media =  soma / maisum
+        soma = sum(list[:i + 1])
+        maisum = i + 1
+        media = soma / maisum
         if list[i] < media:
             newlist.append("c")
         else:
             newlist.append("v")
     return newlist
 
-print(comprar_vender([3, 4, 5, 7, 3, 5, 10, 13, 5, 7]))
+
+# print(comprar_vender([3, 4, 5, 7, 3, 5, 10, 13, 5, 7]))
+
+import random
+
+rede = {'tiago': ['rita', 'francisco', 'joao', 'filipa'], 'joao': ['tiago', 'ricardo'],
+        'ricardo': ['rita', 'francisco'], 'rita': ['tiago', 'filipa', 'ricardo'], 'filipa': [], 'francisco': ['tiago']}
+
+
+def sugestoes(nome, rede, nr):
+    segtotais = []
+    sug = []
+    sugf = []
+    for seguidores in rede[nome]:
+        # tiago e ricardo
+        for segdoseg in rede[seguidores]:
+            segtotais.append(segdoseg)
+    print(segtotais)
+    for ele in segtotais:
+        for ele2 in segtotais:
+            if ele == ele2:
+                if ele not in sugf:
+                    sugf.append(ele)
+                    continue
+    for x in range(nr):
+        choice = random.choice(sug)
+        if choice not in sugf:
+            sugf.append(choice)
+
+    return sugf
+
+
+print(sugestoes("joao", rede, 2))
